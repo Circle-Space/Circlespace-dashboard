@@ -1,0 +1,58 @@
+.log-filter-input{
+  width: 100%;
+  border: 1px hsl(0,0%,80%) solid;
+  border-radius: 4px;
+}
+
+.log-filter-input-search{
+  width: 100%;
+  border: 1px solid #ced4da;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 10px;
+}
+
+select.log-filter-input-select{
+  width: 30%;
+  border: 1px solid #ced4da;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+input.log-filter-input-date{
+  width: 50%;
+  border: 1px solid #ced4da;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 10px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.log-search-container{
+  position: relative;
+  width: 200px;
+}
+
+.log-search-container input{
+  padding-left: 2rem;
+  border-radius: 3px;
+}
+
+.log-global-search{
+  width: 100%;
+  border: 1px solid #ced4da;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.log-search-icon{
+  position: absolute;
+  top: 50%;
+  left: .8rem;
+  transform: translateY(-50%);
+  color: #aaa;
+}

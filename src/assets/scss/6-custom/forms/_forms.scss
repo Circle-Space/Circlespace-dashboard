@@ -1,0 +1,264 @@
+@import "../../1-variables/app";
+
+::placeholder {
+  color: $gray-600 !important;
+  opacity: 0.7 !important;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.form-element-align-right {
+  text-align: right;
+}
+
+.custom-nav-item {
+  --bs-nav-tabs-link-active-bg: none;
+  --bs-nav-tabs-link-active-border-color: none;
+  --bs-nav-tabs-border-width: none;
+  .nav-link.active {
+    border-bottom: 3px solid #3e538e !important;
+    color: #3e538e;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .nav-link {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1f2225;
+  }
+}
+
+.medium-black {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+}
+
+.medium-black-bold {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+}
+
+.medium-light-black-bold {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1f2225;
+}
+
+.small-black-bold {
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+}
+
+/* cperez:::Target all <Form.Label> components */
+.form-label {
+  font-family: Poppins, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+}
+
+/* cperez:::Target all <Form.Control type="text"> components */
+/* cperez:::Target all <Form.Control> components with type "text", "email", and "date" */
+.form-control[type="text"],
+.form-control[type="textarea"],
+.form-control[type="email"],
+.form-control[type="date"] {
+  background-color: var(--white);
+  border-color: var(--gray-400);
+  color: var(--gray-700);
+  transition: none;
+  height: 38px;
+  padding: 10px;
+  border-radius: 3px 0px 0px 0px;
+  border: 1px solid;
+  display: block;
+  width: 100%;
+}
+
+
+.small-black {
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+}
+
+.small-light-black {
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1f2225;
+}
+
+.small-light-black-bold {
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 19.5px;
+  text-align: left;
+  color: #1f2225;
+}
+
+.small-light-black-bolder {
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 19.5px;
+  text-align: left;
+  color: #1f2225;
+}
+
+.large-light-black-bold {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1f2225;
+}
+
+.large-light-black-bolder {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1f2225;
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+.form-footer-container {
+  border-top: 2px solid #dee2e6;
+  display: flex;
+  justify-content: end;
+}
+
+.form-footer-container-left {
+  border-top: 2px solid #dee2e6;
+  display: flex;
+  justify-content: start;
+}
+
+.rea-not-selected-text {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+
+.upload-container {
+  border: 1px dashed #919191;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.segment {
+  display: flex;
+  justify-content: flex-end;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #212427;
+}
+
+.upload-text {
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #212427;
+}
+
+.upload-link-text {
+  color: #0000EE;;
+  text-decoration: underline;
+  cursor: pointer;
+  &:hover {
+    color: #334280;
+    text-decoration: underline;
+  }
+}
+
+
+
+.attachment-container {
+  border: 1px solid #919191;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.file-name-text-bold {
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #212427;
+}
+
+.file-name-text {
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #212427;
+
+}
+
+.gray-top-border {
+  border-top: 1px solid #919191
+}

@@ -1,0 +1,55 @@
+.phone-card {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid #ededed;
+    margin: 20px 0;
+    padding: 16px;
+    font-family: "Segoe UI", sans-serif;
+    color: #323130;
+    max-width: 380px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.phone-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.phone-icon {
+    font-size: 24px;
+    color: #0078d4;
+    margin-right: 8px;
+}
+
+.primary-icon {
+    font-size: 16px;
+    color: green;
+    margin-left: auto;
+}
+
+.phone-details, .phone-comments {
+    display: flex;
+    flex-direction: column;
+}
+
+.phone-name {
+    font-weight: 600;
+    margin-bottom: 6px;
+    margin-left: 8px;
+}
+
+.phone-info {
+    color: #605e5c;
+    font-size: 14px;
+}
+
+.phone-comments {
+    font-size: 12px;
+    color: #605e5c;
+    margin-top: 12px;
+    border-top: 1px solid #ededed;
+    padding-top: 8px;
+}
+

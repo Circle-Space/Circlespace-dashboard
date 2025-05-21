@@ -1,0 +1,11 @@
+<?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="64px" style="enable-background:new 0 0 64 64;" version="1.1" viewBox="0 0 64 64" width="64px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
+<![CDATA[
+	.st0{fill:#46A33B;}
+	.st1{fill:#89E04A;}
+	.st2{fill:#578594;}
+	.st3{fill:#8CE2FF;}
+	.st4{fill:#27263B;}
+	.st5{fill:#FFD24A;}
+	.st6{fill:none;stroke:#27263B;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+]]>
+</style><g id="Layer_1"><path class="st1" d="M61,23v14c0,2.2-1.8,4-4,4h-1v7l-7-7H33c-2.2,0-4-1.8-4-4V23c0-2.2,1.8-4,4-4h16h8C59.2,19,61,20.8,61,23z"/><path class="st2" d="M49,55v3c0,2.8-2.2,5-5,5H20c-2.8,0-5-2.2-5-5v-3H49z"/><path class="st3" d="M49,41v14H15V37h5c2.2,0,4-1.8,4-4v-4c0-2.2-1.8-4-4-4h-5V9h34v10H33c-2.2,0-4,1.8-4,4v14c0,2.2,1.8,4,4,4H49z   "/><path class="st2" d="M49,6v3H15V6c0-2.8,2.2-5,5-5h24C46.8,1,49,3.2,49,6z"/><path class="st5" d="M24,29v4c0,2.2-1.8,4-4,4h-5l-7,7v-7H7c-2.2,0-4-1.8-4-4v-4c0-2.2,1.8-4,4-4h8h5C22.2,25,24,26.8,24,29z"/><path class="st6" d="M15,25V9V6c0-2.8,2.2-5,5-5h24c2.8,0,5,2.2,5,5v3v10"/><path class="st6" d="M49,41v14v3c0,2.8-2.2,5-5,5H20c-2.8,0-5-2.2-5-5v-3V37"/><line class="st6" x1="49" x2="15" y1="9" y2="9"/><line class="st6" x1="49" x2="15" y1="55" y2="55"/><line class="st6" x1="28" x2="36" y1="59" y2="59"/><path class="st6" d="M49,41l7,7v-7h1c2.2,0,4-1.8,4-4V23c0-2.2-1.8-4-4-4h-8H33c-2.2,0-4,1.8-4,4v14c0,2.2,1.8,4,4,4H49z"/><line class="st6" x1="55" x2="35" y1="24" y2="24"/><line class="st6" x1="55" x2="47" y1="28" y2="28"/><line class="st6" x1="55" x2="38" y1="32" y2="32"/><line class="st6" x1="55" x2="42" y1="36" y2="36"/><path class="st6" d="M15,37l-7,7v-7H7c-2.2,0-4-1.8-4-4v-4c0-2.2,1.8-4,4-4h8h5c2.2,0,4,1.8,4,4v4c0,2.2-1.8,4-4,4H15z"/><line class="st6" x1="9" x2="10" y1="31" y2="31"/><line class="st6" x1="13" x2="14" y1="31" y2="31"/><line class="st6" x1="17" x2="18" y1="31" y2="31"/></g><g id="Camada_2"/><g id="Camada_3"/></svg>

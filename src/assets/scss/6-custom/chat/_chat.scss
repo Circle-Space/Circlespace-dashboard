@@ -1,0 +1,192 @@
+.chat-toolbar-button-hover {
+  color: #708090;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+
+  &:active {
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.full-height {
+  height: 90%;
+}
+
+.card-frame {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.card-frame iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 95%;
+}
+
+.sidebar-toggle-btn {
+  position: fixed; /* Keeps button fixed during scroll */
+  z-index: 1050; /* Ensures button is above other content */
+  top: 50%; /* Centers button vertically */
+  left: 25%; /* Adjust based on your sidebar's width for when it's visible */
+  transform: translateX(-50%) translateY(-50%); /* Fine-tunes the position */
+  border-color: rgba(0, 0, 0, 0.1); /* Subtle border color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds a drop shadow for better visibility */
+  cursor: pointer; /* Changes cursor to pointer to indicate clickable */
+  background-color: #ffffff; /* Button background color */
+  color: gray; /* Icon color */
+}
+
+/* Adjusts the button position when the sidebar is hidden */
+.sidebar-hidden .sidebar-toggle-btn {
+  left: 0%; /* Moves button to the very edge of the viewport */
+}
+
+/* Optional: Adjust the icon size within the button if needed */
+.sidebar-toggle-btn .svg-inline--fa {
+  font-size: 20px; /* Increases icon size */
+}
+
+.sidebar-bg-color {
+  background-color: #f9f9f9; /*  //#f9f9f9 Light gray color, adjust as needed */
+}
+
+.contact-item {
+  margin: 8px; /* Adjusted margin for the item */
+  padding: 8px 12px; /* Adjusted padding inside the item */
+  border-radius: 4px; /* Keeps the rounded corners */
+
+  transition: background-color 0.2s, border-color 0.2s; /* Smooth transition for hover effect */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  //background-color: #fff; /* Ensure background color is set for contrast */
+  background-color: transparent; /* Makes background transparent */
+  //border: 1px solid #f0f0f0; /* Optional: adds a light border for definition */
+  border: 1px solid; //transparent; /* Makes borders transparent */
+}
+
+.contact-item:hover {
+  background-color: #cdcdcd; /* Example background color on hover */
+  border-color: #0c0c0c; /* Example border color on hover */
+}
+
+.contact-item.active-contact {
+  background-color: #cdcdcd; /* Example background color on hover */
+  border-color: #0c0c0c; /* Example border color on hover */
+  position: relative; /* Required for z-index to work */
+  //z-index: 1 !important; /* Lower z-index for chat items */
+}
+
+.active-contact {
+  background-color: #e9ecef; /* Active item background color */
+  border-color: #ccc; /* Active item border color */
+}
+
+.text-secondary {
+  //color: #6c757d; /* Medium grey for secondary text */
+  font-family: Poppins;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #090a0a;
+}
+
+.text-chat-contact-name {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0b0c0e;
+}
+
+/* Styling for the online indicator and new conversation text */
+.chat-online,
+.mb-0 {
+  margin-right: 4px;
+  font-size: 0.875rem; /* Smaller font size for details */
+}
+
+/* Specific style for Avatar if needed */
+.Avatar {
+  margin-right: 8px;
+}
+
+/* Adjust Badge style if needed */
+.badge.bg-success {
+  background-color: #28a745;
+}
+
+.chat-options-dropdown .dropdown-menu {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd; /* Slightly visible border */
+  left: 32px !important; /* Move to the left by 30px */
+  top: -32px !important; /* Move to the top by 30px */
+  border-radius: 8px;
+  /* Set individual border-radius for each corner */
+  //border-top-left-radius: 8px; /* Top-left radius */
+  //border-bottom-left-radius: 8px; /* Bottom-left radius */
+  //border-top-right-radius: 0; /* Top-right straight */
+  //border-bottom-right-radius: 0; /* Bottom-right straight */
+}
+
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Adjust based on layout needs */
+  height: 100%; /* Ensure it takes full parent height */
+}
+
+.chat-item {
+  cursor: pointer;
+}
+
+.chat-item.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.chat-body {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: scroll;
+  max-height: 65vh;
+  background-color: #ffffff; // black;
+}
+
+.chat-message {
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #e9ecef;
+  border-radius: 15px;
+  max-height: 90vh;
+  overflow-y: scroll;
+}
+
+/*
+.chat-input-container {
+  position: fixed;
+  bottom: 0;
+  width: 65%;
+  padding: 10px;
+  margin-bottom: 35px;
+}*/
+
+.chat-input {
+  border-top: 1px solid #ececec;
+}
+
+

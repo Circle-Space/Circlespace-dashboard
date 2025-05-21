@@ -1,0 +1,44 @@
+.chat-online {
+  color: lighten($success, 10%);
+}
+
+.chat-offline {
+  color: lighten($danger, 10%);
+}
+
+.chat-messages {
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.contact-list {
+  display: flex;
+  padding: 5px;
+}
+
+.chat-message-left,
+.chat-message-right {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.chat-message-left {
+  margin-right: auto;
+}
+
+.chat-message-right {
+  flex-direction: row-reverse;
+  margin-left: auto;
+}
+
+.contact-filter-input {
+  width: 100%;
+  border: 1px hsl(0, 0%, 80%) solid;
+  border-radius: 4px;
+}
+
+.load-more-text {
+  color: rgb(12, 167, 218);
+}

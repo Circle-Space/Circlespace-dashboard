@@ -1,0 +1,40 @@
+/* styles.scss */
+
+.search-results {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-height: 150px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(239, 10, 10, 0.1);
+  background-color: #fff;
+
+  li {
+    cursor: pointer;
+    padding: 8px;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #68b9ec;
+    }
+  }
+}
+
+.result-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.result-label {
+  margin-right: 8px;
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}

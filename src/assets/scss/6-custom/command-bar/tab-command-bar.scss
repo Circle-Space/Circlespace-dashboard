@@ -1,0 +1,91 @@
+.tab-command-bar {
+  background: rgb(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px 0px,
+    rgba(0, 0, 0, 0.14) 0px 2px 4px 0px;
+  color: rgb(36, 36, 36);
+  display: flex;
+  flex-flow: column nowrap;
+  font: 14px "Segoe UI", "Segoe UI Web (West European)", -apple-system,
+    BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  margin: 8px;
+  padding: 6px;
+  text-align: left;
+  position: relative;
+}
+
+/* Updated styles for the role section */
+.tab-command-bar-sections-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  min-height: 50px; /* Example; adjust based on your layout */
+}
+
+.tab-command-bar-section {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 8px 16px; /* Increased horizontal padding for a more rectangular shape */
+  display: flex;
+  flex-direction: column;
+ // align-items: flex-start;
+  box-shadow: none; /* Removed box-shadow for a cleaner look */
+  min-height: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab-command-bar-vertical-divider {
+  height: 34px;
+  width: 1.5px; /* Increased from 1px for better visibility */
+  background-color: rgba(0, 0, 0, 0.2); /* Darker shade for better contrast */
+  margin: 0 12px; /* Increased spacing around the divider */
+  opacity: 1; /* Ensure it's fully opaque */
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  //background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.15) 50%, rgba(0,0,0,0) 100%);
+}
+
+.tab-command-bar-title {
+  font-size: 14px;
+  font-weight: bold; /* Make title bold */
+  color: rgba(0, 0, 0, 0.7); /* Slightly darker for emphasis */
+  margin-bottom: 4px;
+}
+
+.tab-command-bar-value {
+  font-size: 12px;
+  
+  font-weight: normal; /* Lighter font weight for value */
+  color: rgba(0, 0, 0, 0.6); /* Lighter color for a subtle appearance */
+}
+
+/* CSS for active tab */
+.active-tab-command-bar {
+  text-decoration: none;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #1976d2; /* Material UI default blue */
+  color: #080809;
+  font-weight: 900;
+  font-family: "Segoe UI Semibold", "Segoe UI", sans-serif;
+  font-size: 1rem;
+}
+
+/* CSS for inactive tabs */
+.inactive-tab-command-bar {
+  text-decoration: none;
+  padding-bottom: 10px;
+  border-bottom: 1px solid transparent;
+  color: rgba(8, 8, 8, 0.87);
+  font-family: "Segoe UI Regular", "Segoe UI", sans-serif;
+  font-size: 1rem;
+}
+
+.inactive-tab-command-bar:hover {
+  font-weight: 600;
+  font-size: larger;
+  color: "black";
+  font-size: 1.05rem;
+  transition: font-size 0.3s ease, font-weight 3.9s ease;
+}

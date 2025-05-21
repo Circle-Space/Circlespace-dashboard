@@ -1,0 +1,89 @@
+.tab-container {
+  min-width: 163px;
+  cursor: pointer;
+  justify-content: center;
+  display: flex;
+  min-height: 63px;
+}
+
+.selected-tab-container {
+  @extend .tab-container;
+  height: 50px;
+  border-bottom: 3px solid #3e538e;
+}
+
+.not-selected-tab-container {
+  @extend .tab-container;
+  padding: 0px 15px;
+  border-bottom: 3px solid #919191;
+}
+
+.selected-tab {
+  padding: 0px 10px;
+  background-color: #3e538e;
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+  min-width: 163px;
+  justify-content: center;
+}
+
+.not-selected-tab {
+  align-items: end;
+}
+
+.selected-tab-text {
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.not-selected-tab-text {
+  color: #1f2225;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.date-range-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #1f2225;
+}
+
+.dashboard-header-text {
+  font-family: Poppins;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 39px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1f2225;
+}
+
+.custom-pagination {
+  font-size: 35px;
+}
+
+.gray-border-bottom {
+  border-bottom: solid 1px #d9d9d9;
+}
+
+.edit-post-submission-header {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+.go-back-link {
+  color: #6b52a9;
+  cursor: pointer;
+}
+
+.sub-header {
+  font-weight: 400;
+  font-size: 13px;
+  color: #4e555a;
+}

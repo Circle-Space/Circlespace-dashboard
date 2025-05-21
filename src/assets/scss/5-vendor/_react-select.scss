@@ -1,0 +1,116 @@
+.react-select-container {
+  .react-select__control {
+    background-color: $white;
+    border-color: $gray-400;
+    color: $gray-700;
+    transition: none;
+    height: 40px;
+    padding: 10px 0px 0px 0px;
+    gap: 10px;
+    border-radius: 3px 0px 0px 0px;
+    border: 1px solid transparent;
+    opacity: 1px;
+
+    &:hover {
+      border-color: $gray-500;
+    }
+  }
+
+  .react-select__menu {
+    position: absolute;
+    background-color: $white;
+    border: 1px solid $gray-400;
+    z-index: 1050;
+  }
+
+  .react-select__option {
+    background-color: $white;
+    color: $gray-700;
+
+    &:hover {
+      background-color: $gray-100;
+    }
+  }
+
+  .react-select__indicator-separator {
+    background-color: $white;
+  }
+
+  .react-select__placeholder,
+  .react-select__single-value {
+    color: $gray-700;
+  }
+}
+
+
+/* Form Control Custom Style */
+.form-control-custom {
+  background-color: var(--white);
+  border-color: var(--gray-400);
+  color: var(--gray-700);
+  transition: none;
+  height: 38px;
+  padding: 10px;
+  border-radius: 3px 0px 0px 0px;
+  border: 1px solid;
+  display: block;
+  width: 100%;
+}
+
+
+.form-control-custom:hover {
+  border-color: var(--gray-500);
+}
+
+
+.section-title-header {
+  color: var(--Black-Text-Color, #1f2225);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* cperez:::Target all <Select components */
+.react-select__control {
+  background-color: $white;
+  border-color: $gray-400;
+  color: $gray-700;
+  transition: none;
+  height: 40px;
+  padding: 10px 0px 0px 0px;
+  gap: 10px;
+  border-radius: 3px 0px 0px 0px;
+  border: 1px solid; //transparent;
+  opacity: 1; 
+
+  &:hover {
+    border-color: $gray-500;
+  }
+}
+
+.react-select__menu {
+  position: absolute;
+  background-color: $white;
+  border: 1px solid $gray-400;
+  z-index: 1050; // Make sure this is high enough relative to other elements on your page
+}
+
+.react-select__option {
+  background-color: $white;
+  color: $gray-700;
+
+  &:hover {
+    background-color: $gray-100;
+  }
+}
+
+.react-select__indicator-separator {
+  background-color: $white;
+}
+
+.react-select__placeholder,
+.react-select__single-value {
+  color: $gray-700;
+}

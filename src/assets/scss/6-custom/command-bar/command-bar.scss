@@ -1,0 +1,243 @@
+.command-bar {
+  height: auto;
+  min-height: 38px; // Reduced from 44px
+  margin: 6px; // Reduced from 8px
+  padding: 4px 8px; // Reduced from 5px 10px
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px; // Slightly reduced from 12px
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1); // Slightly reduced shadow
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.7);
+  color: rgb(36, 36, 36);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  max-width: calc(100% - 12px); // Adjusted for new margin
+  transition: all 0.3s ease;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.command-bar-btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px; // Reduced from 8px
+  padding: 3px 0; // Reduced from 5px 0
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.command-bar-btn {
+  display: flex;
+  align-items: center;
+  height: 32px; // Reduced from 36px
+  padding: 0 14px; // Increased horizontal padding
+  color: rgb(66, 66, 66);
+  background: rgba(255, 255, 255, 0.6);
+  font: 13px / 32px 'Segoe UI', sans-serif; // Reduced font size
+  border: 1px solid rgba(66, 66, 66, 0.2);
+  border-radius: 6px; // Reduced from 8px
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+
+  &:active {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    transform: translateY(1px);
+  }
+
+  &:hover {
+    background-color: rgba(245, 245, 223, 0.8);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &.dropdown-toggle {
+    padding-right: 28px; // Increased for better arrow placement
+    position: relative;
+
+    .dropdown-arrow {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.command-btn-icon {
+  width: 16px; // Reduced from 18px
+  height: 16px; // Reduced from 18px
+  margin-right: 8px; // Increased from 6px
+}
+
+.command-btn-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 130px; // Increased from 120px
+}
+
+.vert-divider {
+  width: 1px;
+  height: 20px; // Reduced from 24px
+  background-color: rgba(200, 200, 200, 0.5);
+  margin: 0 3px; // Reduced from 0 4px
+}
+
+// Updated styles for react-select
+.command-bar-select {
+  &__control {
+    padding-left: 8px;
+    height: 32px !important; // Reduced from 36px
+    min-height: 32px !important; // Reduced from 36px
+    font: 13px / 32px 'Segoe UI', sans-serif !important; // Reduced font size
+   
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    display: flex !important;
+    align-content: center;
+
+    &:hover {
+      background-color: rgba(245, 245, 223, 0.8) !important;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1) !important;
+    }
+
+    &--is-focused {
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.3) !important;
+    }
+  }
+
+  &__value-container {
+    padding: 0 8px !important;
+    margin: 0 !important;
+  }
+
+  &__single-value {
+    color: rgb(66, 66, 66) !important;
+    margin: 0 !important;
+  }
+
+  &__indicator-separator {
+    display: none !important;
+  }
+
+  &__dropdown-indicator {
+    padding: 0 6px !important; // Reduced from 8px
+  }
+
+  &__menu-list {
+    padding: 0 !important;
+  }
+
+  &__option {
+    display: flex !important;
+    align-items: center !important;
+    padding: 6px 14px !important; // Reduced vertical padding
+    font-weight: 400 !important;
+    color: #212529 !important;
+    cursor: pointer !important;
+    background-color: transparent !important;
+
+    &:hover {
+      background-color: #f8f9fa !important;
+    }
+
+    &--is-selected {
+      background-color: #007bff !important;
+      color: white !important;
+    }
+
+    &--is-focused {
+      background-color: #f8f9fa !important;
+    }
+  }
+}
+
+.dropdown-item-icon {
+  width: 16px !important; // Reduced from 18px
+  height: 16px !important; // Reduced from 18px
+  margin-right: 8px !important;
+}
+
+// Custom styles for the icon in the select control
+.command-bar-select__control .command-btn-icon {
+  margin-right: 8px !important;
+}
+
+// Ensure the dropdown container doesn't clip the menu
+.dropdown-container {
+  position: relative !important;
+  z-index: 99999 !important;
+}
+
+// Adjustments for search input
+.command-search-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-left: 10px; // Reduced from 12px
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+    width: 100%;
+    max-width: 280px; // Reduced from 300px
+  }
+}
+
+.command-search-input {
+  padding: 6px 30px; // Reduced padding
+  border: 1px solid rgba(204, 204, 204, 0.5);
+  border-radius: 16px; // Reduced from 20px
+  outline: none;
+  box-sizing: border-box;
+  width: 180px; // Reduced from 200px
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+  font-size: 13px; // Added to match other text sizes
+
+  &:focus {
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+    background-color: white;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.command-search-icon,
+.command-clear-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #555;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  font-size: 14px; // Reduced size
+
+  &:hover {
+    color: #333;
+  }
+}
+
+.command-search-icon {
+  right: 8px; // Reduced from 10px
+}
+
+.command-clear-icon {
+  left: 8px; // Reduced from 10px
+}
